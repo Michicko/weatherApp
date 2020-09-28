@@ -28,7 +28,7 @@ locBtn.addEventListener('click', function () {
 
 // get weather data from API
 function getWeather(state, city) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${state},${city}%27&appid=802d52be1a7bd07808a4258f14da2563`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${state},${city}%27&appid=${config.apiKey}`)
         .then(res => res.json())
         .then(data => {
             displayWeatherData(data);
