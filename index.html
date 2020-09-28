@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="content__data">
+                
+            </div>
+            
+            <button class="content__btn">Change Location</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal__content">
+            <div class="modal-top">
+                <h2 class="modal__heading">Location</h2>
+                <p class="close-btn">x</p>
+            </div>
+            <hr>
+            <form id="modal-form" class="modal__form">
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state">
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save Changes" id="save" class="save">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
